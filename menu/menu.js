@@ -13,16 +13,18 @@
  */
 
 module.exports = function (electronApp, menuState) {
-  return [{
-    label: 'Send a message to the console',
-    accelerator: 'CommandOrControl+=',
-    enabled: () => menuState.bpmn && menuState.platform === 'platform', 
-    action: () => console.log('📓 A custom menu entry was triggered')
-  }, 
-  {
-    label: 'Send a different message to the console',
-    accelerator: 'CommandOrControl+-', 
-    enabled: () => menuState.bpmn,
-    action: () => console.log('📓 A different custom menu entry was triggered')
-  }]
+  return [
+  //   {
+  //   label: 'Send a message to the console',
+  //   accelerator: 'CommandOrControl+=',
+  //   enabled: () => menuState.bpmn && menuState.platform === 'platform', 
+  //   action: () => console.log('📓 A custom menu entry was triggered')
+  // }, 
+  // {
+  //   label: 'Send a different message to the console',
+  //   accelerator: 'CommandOrControl+-', 
+  //   enabled: () => menuState.bpmn,
+  //   action: () => console.log('📓 A different custom menu entry was triggered')
+  // }
+]
 }

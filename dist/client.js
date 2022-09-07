@@ -106,17 +106,17 @@ __webpack_require__.r(__webpack_exports__);
  */
 function ExampleBpmnJsExtension(eventBus) {
 
-  eventBus.on('shape.added', function(context) {
-    var element = context.element;
+  // eventBus.on('shape.added', function(context) {
+  //   var element = context.element;
 
-    console.log('🎉 A shape was added!', element);
-  });
+  //   console.log('🎉 A shape was added!', element);
+  // });
 
-  eventBus.on('connection.added', function(context) {
-    var element = context.element;
+  // eventBus.on('connection.added', function(context) {
+  //   var element = context.element;
 
-    console.log('🎊 A connection was added!', element);
-  });
+  //   console.log('🎊 A connection was added!', element);
+  // });
 }
 
 ExampleBpmnJsExtension.$inject = [
@@ -182,7 +182,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(camunda_modeler_plugin_helpers__WEBPACK_IMPORTED_MODULE_0__["registerPlatformBpmnJSPlugin"])(_bpmn_js_extension__WEBPACK_IMPORTED_MODULE_1__["default"]);
+Object(camunda_modeler_plugin_helpers__WEBPACK_IMPORTED_MODULE_0__["registerBpmnJSPlugin"])(_bpmn_js_extension__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
 
 /***/ }),

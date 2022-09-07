@@ -7,7 +7,7 @@
 
 module.exports = {
   name: 'Example Plug-in',
-  menu: './menu/menu.js',
+  //menu: './menu/menu.js',
   style: './style/style.css',
-  script: './dist/client.js',
+  //script: './dist/client.js',
 };
