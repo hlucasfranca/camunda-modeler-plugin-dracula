@@ -1,21 +1,126 @@
-@import url(diagram-js.css);
-@import url(colors.css); 
+/* @import url(diagram-js.css);
+@import url(colors.css);  */
 @import url(codemirror-dracula.css);
 
-:root {    
-    --dracula-background: hsl(231, 15%, 18%);
-    --dracula-current-line: hsl(232, 14, 31);
-    --dracula-foreground: hsl(60, 30, 96);
-    --dracula-comment: hsl(225, 27, 51);
-    --dracula-cyan: hsl(191, 97, 77);
-    --dracula-green: hsl(135, 94, 65);
-    --dracula-orange: hsl(31, 100, 71);
-    --dracula-pink: hsl(326, 100, 74);
-    --dracula-purple: hsl(265, 89, 78);
-    --dracula-red: hsl(0, 100, 67);
-    --dracula-yellow: hsl(65, 92, 76);
+:root {
+    --dracula-background: #262936;
+    --dracula-current-line: #44475a;
+    --dracula-foreground: #f8f8f2;
+    --dracula-comment: #6071a4;
+    --dracula-cyan: #8be8fd;
+    --dracula-green: #52fa7c;
+    --dracula-orange: #ffb86b;
+    --dracula-pink: #ff7ac6;
+    --dracula-purple: #bf95f9;
+    --dracula-red: #ff5757;
+    --dracula-yellow: #f1fa89;
 }
 
 body{
     background-color: var(--dracula-background);
+}
+
+.bio-properties-panel{
+    --color-grey-225-10-15: hsl(225, 10%, 15%);
+    --color-grey-225-10-35: hsl(225, 10%, 35%);
+    --color-grey-225-10-55: hsl(225, 10%, 55%);
+    --color-grey-225-10-75: hsl(225, 10%, 75%);
+    --color-grey-225-10-80: hsl(225, 10%, 80%);
+    --color-grey-225-10-85: hsl(225, 10%, 85%);
+    --color-grey-225-10-90: hsl(225, 10%, 90%);
+    --color-grey-225-10-95: hsl(225, 10%, 95%);
+    --color-grey-225-10-97: hsl(225, 10%, 97%);
+
+    --color-blue-205-100-35: hsl(205, 100%, 35%);
+    --color-blue-205-100-45: hsl(205, 100%, 45%);
+    --color-blue-205-100-50: hsl(205, 100%, 50%);
+    --color-blue-205-100-95: hsl(205, 100%, 95%);
+
+    --color-green-150-86-44: hsl(150, 86%, 44%);
+
+    --color-red-360-100-40: hsl(360, 100%, 40%);
+    --color-red-360-100-45: hsl(360, 100%, 45%);
+    --color-red-360-100-92: hsl(360, 100%, 92%);
+    --color-red-360-100-97: hsl(360, 100%, 97%);
+
+    --color-white: var(--dracula-background);
+    --color-black: var(--dracula-foreground);
+    --color-transparent: transparent;
+
+    --text-base-color: var(--dracula-foreground);
+    --text-error-color: var(--dracula-red);
+    --link-color: var(--color-blue-205-100-50);
+
+    --description-color: hsla(var(--dracula-foreground), .1);
+    --description-code-background-color: var(--color-grey-225-10-97);
+    --description-code-border-color: var(--color-grey-225-10-85);
+    --description-list-item-color: var(--color-grey-225-10-35);
+
+    --placeholder-color: var(--color-grey-225-10-35);
+    --placeholder-background-color: var(--color-grey-225-10-95);
+
+    --header-background-color: var(--color-grey-225-10-95);
+    --header-icon-fill-color: var(--color-grey-225-10-15);
+    --header-bottom-border-color: var(--color-grey-225-10-75);
+
+    --group-background-color: var(--color-white);
+    --group-bottom-border-color: var(--color-grey-225-10-75);
+
+    --sticky-group-background-color: var(--color-grey-225-10-95);
+    --sticky-group-bottom-border-color: var(--color-grey-225-10-75);
+
+    --add-entry-fill-color: var(--color-grey-225-10-35);
+    --add-entry-hover-fill-color: var(--color-white);
+    --add-entry-hover-background-color: var(--color-blue-205-100-50);
+    --add-entry-label-color: var(--color-white);
+
+    --remove-entry-fill-color: var(--color-red-360-100-45);
+    --remove-entry-hover-background-color: var(--color-red-360-100-92);
+
+    --arrow-fill-color: var(--color-grey-225-10-35);
+    --arrow-hover-background-color: var(--color-grey-225-10-95);
+
+    --dot-color: var(--color-grey-225-10-35);
+
+    --list-badge-color: var(--color-white);
+    --list-badge-background-color: var(--color-grey-225-10-35);
+
+    --input-background-color: var(--dracula-current-line);
+    --input-border-color: var(--color-grey-225-10-75);
+
+    --input-focus-background-color: var(--color-blue-205-100-95);
+    --input-focus-border-color: var(--color-blue-205-100-50);
+
+    --input-error-background-color: var(--color-red-360-100-97);
+    --input-error-border-color: var(--color-red-360-100-45);
+    --input-error-focus-border-color: var(--color-red-360-100-45);
+
+    --input-disabled-color: var(--color-grey-225-10-55);
+    --input-disabled-background-color: var(--color-grey-225-10-97);
+    --input-disabled-border-color: var(--color-grey-225-10-90);
+
+    --toggle-switch-on-background-color: var(--color-blue-205-100-50);
+    --toggle-switch-off-background-color: var(--color-grey-225-10-75);
+    --toggle-switch-switcher-background-color: var(--color-white);
+
+    --side-line-background-color: var(--color-grey-225-10-35);
+    --side-line-extension-background-color: var(--color-grey-225-10-35);
+
+    --list-entry-dot-background-color: var(--color-grey-225-10-35);
+    --list-entry-header-button-fill-color: var(--color-grey-225-10-35);
+    --list-entry-add-entry-empty-background-color: var(--color-blue-205-100-50);
+    --list-entry-add-entry-empty-hover-background-color: var(--color-blue-205-100-45);
+    --list-entry-add-entry-label-color: var(--color-white);
+    --list-entry-add-entry-background-color: var(--color-blue-205-100-50);
+    --list-entry-add-entry-fill-color: var(--color-white);
+
+    --dropdown-item-background-color: var(--color-white);
+    --dropdown-item-hover-background-color: var(--color-grey-225-10-95);
+    --dropdown-separator-background-color: var(--color-grey-225-10-75);
+
+    --feel-active-color: var(--color-blue-205-100-35);
+    --feel-inactive-color: var(--color-grey-225-10-35);
+
+    --feel-indicator-background-color: var(--color-grey-225-10-90);
+
 }
