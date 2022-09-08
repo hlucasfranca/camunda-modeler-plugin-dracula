@@ -1,0 +1,43 @@
+:root {
+  --dracula-background: hsl(231, 15%, 18%);
+  --dracula-current-line: hsl(232, 14, 31);
+  --dracula-foreground: hsl(60, 30, 96);
+  --dracula-comment: hsl(225, 27, 51);
+  --dracula-cyan: hsl(191, 97, 77);
+  --dracula-green: hsl(135, 94, 65);
+  --dracula-orange: hsl(31, 100, 71);
+  --dracula-pink: hsl(326, 100, 74);
+  --dracula-purple: hsl(265, 89, 78);
+  --dracula-red: hsl(0, 100, 67);
+  --dracula-yellow: hsl(65, 92, 76);
+
+  --color-grey-225-10-15: var(--dracula-foreground); /* text */
+  --color-grey-225-10-35: hsl(225, 10%, 35%); /* icons */
+  --color-grey-225-10-55: hsl(225, 10%, 55%);
+  --color-grey-225-10-75: hsl(225, 10%, 75%); /* lines */
+  --color-grey-225-10-80: hsl(225, 10%, 80%); /* hover on grey bg */
+  --color-grey-225-10-85: hsl(225, 10%, 85%); /* app window */
+  --color-grey-225-10-90: hsl(225, 10%, 90%); /* button hover */
+  --color-grey-225-10-95: --dracula-background; /* backgrounds, hover */
+  --color-grey-225-10-97: hsl(225, 10%, 97%); /* form element backgrounds */
+
+  --color-blue-205-100-40: hsl(205, 100%, 40%); /* outline */
+  --color-blue-205-100-45: hsl(205, 100%, 45%); /* primary hover */
+  --color-blue-205-100-50: hsl(205, 100%, 50%); /* primary */
+  --color-blue-205-100-95: hsl(205, 100%, 95%);
+
+  --color-green-150-86-44: hsl(150, 86%, 44%); /* success */
+
+  --color-red-360-100-40: hsl(360, 100%, 40%); /* warning hover */
+  --color-red-360-100-45: hsl(360, 100%, 45%); /* warning */
+  --color-red-360-100-92: hsl(360, 100%, 92%); /* hover */
+  --color-red-360-100-97: hsl(360, 100%, 97%); /* backgrounds */
+
+  --color-orange-20-98-52: hsl(20, 98%, 52%); /* new badges */
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-opacity-80: hsla(0, 0%, 100%, 80%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-black-opacity-10: hsla(0, 0%, 0%, 10%);
+  --color-black-opacity-30: hsla(0, 0%, 0%, 30%);
+}
