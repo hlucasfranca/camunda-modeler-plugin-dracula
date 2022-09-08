@@ -86,40 +86,53 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./client/bpmn-js-extension/ExampleBpmnJsExtension.js":
-/*!************************************************************!*\
-  !*** ./client/bpmn-js-extension/ExampleBpmnJsExtension.js ***!
-  \************************************************************/
+/***/ "./client/bpmn-js-extension/DraculaTheme.js":
+/*!**************************************************!*\
+  !*** ./client/bpmn-js-extension/DraculaTheme.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ExampleBpmnJsExtension; });
-/**
- * A bpmn-js service that provides the actual plug-in feature.
- *
- * Checkout the bpmn-js examples to learn about its capabilities
- * and the extension points it offers:
- *
- * https://github.com/bpmn-io/bpmn-js-examples
- */
-function ExampleBpmnJsExtension(eventBus) {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DraculaTheme; });
+function DraculaTheme(eventBus) {
 
-  // eventBus.on('shape.added', function(context) {
-  //   var element = context.element;
+  function changeColors(event) {
 
-  //   console.log('🎉 A shape was added!', element);
-  // });
+    const gfx = event.gfx;
 
-  // eventBus.on('connection.added', function(context) {
-  //   var element = context.element;
+    if(gfx.children.length > 0 && gfx.children[0].children){
+      for (let child of gfx.children[0].children) {
 
-  //   console.log('🎊 A connection was added!', element);
-  // });
+        let style = child.style;
+        let fill = style.fill;
+
+        if( style.fill == 'white' || style.fill == "rgb(255, 255, 255)"){
+          style.fill = '#262936';  
+        } else if (style.fill == 'black' || style.fill == 'rgb(0, 0, 0)' || style.fill == 'rgb(34, 36, 42)'|| style.fill == 'rgb(38, 41, 54)'){
+          style.fill = 'rgb(207, 205, 205)';
+        }       
+        
+        if(style.stroke == 'black' || style.stroke == 'rgb(0, 0, 0)' || style.stroke == 'rgb(34, 36, 42)'|| style.stroke == 'rgb(38, 41, 54)'){
+          style.stroke = 'rgb(207, 205, 205)';
+        }
+      }
+    }
+    
+  }
+
+eventBus.on([
+  'shape.added',
+  'render.shape', 
+  'render.connection',
+  'shape.moved',
+  'shape.changed'
+], changeColors);
+
 }
 
-ExampleBpmnJsExtension.$inject = [
+DraculaTheme.$inject = [
   'eventBus'
 ];
 
@@ -134,25 +147,12 @@ ExampleBpmnJsExtension.$inject = [
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ExampleBpmnJsExtension__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ExampleBpmnJsExtension */ "./client/bpmn-js-extension/ExampleBpmnJsExtension.js");
+/* harmony import */ var _DraculaTheme__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DraculaTheme */ "./client/bpmn-js-extension/DraculaTheme.js");
 
 
-/**
- * A bpmn-js module, defining all extension services and their dependencies.
- *
- * --------
- *
- * WARNING: This is an example only.
- *
- * Make sure you choose a unique name under which your extension service
- * is exposed (i.e. change PLEASE_CHANGE_ME to something unique).
- *
- * --------
- *
- */
 /* harmony default export */ __webpack_exports__["default"] = ({
-  __init__: [ 'PLEASE_CHANGE_ME' ],
-  PLEASE_CHANGE_ME: ['type', _ExampleBpmnJsExtension__WEBPACK_IMPORTED_MODULE_0__["default"] ]
+  __init__: [ 'DraculaTheme' ],
+  DraculaTheme: ['type', _DraculaTheme__WEBPACK_IMPORTED_MODULE_0__["default"] ]
 });
 
 
@@ -169,15 +169,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var camunda_modeler_plugin_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! camunda-modeler-plugin-helpers */ "./node_modules/camunda-modeler-plugin-helpers/index.js");
 /* harmony import */ var _bpmn_js_extension__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bpmn-js-extension */ "./client/bpmn-js-extension/index.js");
-/** 
- * NOTE: This is specifically a registration of a **bpmn-js** extension. If you would like to create another type of plugin 
- * (say a client extension), the structure of the plugin and the function to register it will be slightly different.
- * 
- * Please refer to:
- * Examples plugins - https://github.com/camunda/camunda-modeler-plugins
- * Plugin documentation - https://docs.camunda.io/docs/components/modeler/desktop-modeler/plugins/
- */
-
 
 
 

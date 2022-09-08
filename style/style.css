@@ -69,9 +69,9 @@ select{
     fill: var(--dracula-background) !important;
 } */
 
-.djs-visual > :nth-child(1){
+/* .djs-visual > :nth-child(1){
     fill: var(--dracula-background) !important;
-}
+} */
 
 /* .djs-visual > :nth-child(2) {
     fill: var(--color-grey-225-10-35) !important;
@@ -86,12 +86,12 @@ marker path{
 .btn--tab-action path,
 .djs-visual path,
 .djs-visual polyline,
-.djs-visual rect,
-.djs-visual circle,
+/* .djs-visual rect,
+.djs-visual circle, */
 .djs-visual line,
 .djs-connection-preview path,
 .djs-connection-preview polyline,
-.djs-connection-preview line
+.djs-connection-preview line,
 marker path{
     stroke: var(--color-grey-225-10-35) !important;
 }
