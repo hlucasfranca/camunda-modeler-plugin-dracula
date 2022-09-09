@@ -62,40 +62,6 @@ select{
     color: var(--dracula-foreground);
 }
 
-/* .djs-visual  rect,
-.djs-visual circle,
-.djs-visual path
-{
-    fill: var(--dracula-background) !important;
-} */
-
-/* .djs-visual > :nth-child(1){
-    fill: var(--dracula-background) !important;
-} */
-
-/* .djs-visual > :nth-child(2) {
-    fill: var(--color-grey-225-10-35) !important;
-  } */
-
-.djs-visual text,
-marker path{
-    fill: var(--color-grey-225-10-35) !important;
-    
-}
-
-.btn--tab-action path,
-.djs-visual path,
-.djs-visual polyline,
-/* .djs-visual rect,
-.djs-visual circle, */
-.djs-visual line,
-.djs-connection-preview path,
-.djs-connection-preview polyline,
-.djs-connection-preview line,
-marker path{
-    stroke: var(--color-grey-225-10-35) !important;
-}
-
 .welcome-card{
     background-color: var(--dracula-current-line) !important;
     color: var(--dracula-foreground) !important;

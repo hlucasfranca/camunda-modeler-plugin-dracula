@@ -104,8 +104,8 @@ function DraculaTheme(eventBus) {
     const element = event.element;
 
     if(element){
-      element.di['background-color']='#262936';
-      element.di['border-color']='rgb(207, 205, 205)';
+      element.di['background-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-white');
+      element.di['border-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-grey-225-10-35');
     }
   }
 
