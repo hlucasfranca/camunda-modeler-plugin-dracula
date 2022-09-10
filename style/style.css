@@ -204,7 +204,18 @@ select{
 
     --popup-border-color: var(--dracula-comment);
 
+    --context-pad-entry-background-color: var(--color-white);
+    --context-pad-entry-hover-background-color: var(--color-grey-225-10-95);
+  
+    
+    --element-hover-outline-fill-color: var(--color-blue-205-100-45);
+    --element-selected-outline-stroke-color: var(--dracula-purple);
+    --element-selected-outline-secondary-stroke-color: var(--element-selected-outline-stroke-color);
+    --element-dragger-color: var(--element-selected-outline-stroke-color);
 
+    --palette-entry-hover-color: var(--dracula-purple);
+    
+    --popup-header-entry-selected-background-color: var(--dracula-current-line);
 }
 
 .djs-container .djs-minimap{
@@ -215,6 +226,9 @@ select{
     color: var(--dracula-purple);
 }
 
+.djs-popup .entry:hover {
+    color: var(--dracula-purple);
+  }
 
 .djs-context-pad {
     position: absolute;
