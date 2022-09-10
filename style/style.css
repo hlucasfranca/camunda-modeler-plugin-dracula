@@ -200,7 +200,11 @@ select{
 
     --color-white: var(--dracula-background);
     --color-black: var(--dracula-foreground);
-    --color-transparent: transparent;    
+    --color-transparent: transparent;
+
+    --popup-border-color: var(--dracula-comment);
+
+
 }
 
 .djs-container .djs-minimap{
@@ -210,4 +214,42 @@ select{
 .bio-properties-panel-description, .bio-properties-panel-description p, .bio-properties-panel-description span, .bio-properties-panel-description div{
     color: var(--dracula-purple);
 }
+
+
+.djs-context-pad {
+    position: absolute;
+    display: none;
+    pointer-events: none;
+    line-height: 1;
+    background-color: var(--dracula-background);
+    border: 1px solid var(--dracula-comment);
+    padding: 5px;
+    width: 42px !important;
+  }
+
+  .djs-context-pad .group:not(:last-child){
+    border-bottom: 1px solid var(--dracula-comment);
+  }
+
+  .djs-context-pad .entry {
+    border-radius: 0px !important;
+    padding: 0px;
+    background-color: var(--context-pad-entry-background-color);
+    box-shadow: 0 0 0px 0px var(--context-pad-entry-background-color) !important;
+    pointer-events: all;
+    vertical-align: middle;
+    width: 30px;
+    height: 22px;
+    margin: 5px 0 5px 0;
+  }
+
+  .djs-context-pad .entry:hover {
+    background: var(--dracula-background);
+    color: var(--dracula-purple);
+  }
+
+  .djs-context-pad.open {
+    display: block;
+  }
+
 
