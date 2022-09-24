@@ -175,6 +175,11 @@ select{
 
 }
 
+.align-elements img,
+.djs-context-pad img{
+  filter: invert(1) !important;
+}
+
 .djs-container {
 
     --color-black-opacity-10: rgba(248, 248, 242, .1);
