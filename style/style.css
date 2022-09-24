@@ -301,4 +301,16 @@ select{
     display: block;
   }
 
+  .djs-element.selected .djs-outline,
+  .djs-selection-outline {    
+    stroke-dasharray: 2;
+    stroke-dashoffset: 500;
+    animation: dash 80s linear infinite;
+    stroke: var(--element-selected-outline-stroke-color);
+  }
 
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
