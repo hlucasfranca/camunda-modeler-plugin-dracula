@@ -38,6 +38,9 @@
     --overlay-max-width: auto;
     --overlay-min-height: auto;
     --overlay-min-width: auto;
+
+    --log-button-background-color: var(--dracula-current-line);
+    --log-color: var(--dracula-foreground);
 }
 
 .bio-properties-panel-group-header,
@@ -219,6 +222,15 @@ select{
     --palette-entry-selected-color: var(--dracula-purple);
 
     --lasso-fill-color: 	rgba(189, 147, 249,.2);
+}
+
+.modal-dialog,
+.btn-primary{
+  color: var(--dracula-foreground);
+}
+
+.controls button{
+  color: var(--dracula-foreground);
 }
 
 .bts-toggle-mode {
