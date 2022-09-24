@@ -205,8 +205,7 @@ select{
     --popup-border-color: var(--dracula-comment);
 
     --context-pad-entry-background-color: var(--color-white);
-    --context-pad-entry-hover-background-color: var(--color-grey-225-10-95);
-  
+    --context-pad-entry-hover-background-color: var(--color-grey-225-10-95);  
     
     --element-hover-outline-fill-color: var(--color-blue-205-100-45);
     --element-selected-outline-stroke-color: var(--dracula-purple);
@@ -216,6 +215,25 @@ select{
     --palette-entry-hover-color: var(--dracula-purple);
     
     --popup-header-entry-selected-background-color: var(--dracula-current-line);
+
+    --palette-entry-selected-color: var(--dracula-purple);
+
+    --lasso-fill-color: 	rgba(189, 147, 249,.2);
+}
+
+.bts-toggle-mode {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: var(--dracula-current-line);
+  border: 1px solid var(--dracula-foreground);
+  border-radius: 2px !important;
+  padding: 6px;
+  font-size: 16px;
+  color: var(--dracula-foreground);
+  user-select: none;
+  display: inline-flex;
 }
 
 .djs-container .djs-minimap{

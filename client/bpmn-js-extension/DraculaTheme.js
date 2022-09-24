@@ -5,7 +5,7 @@ export default function DraculaTheme(eventBus) {
     const gfx = event.gfx;
     const element = event.element;
 
-    if(element){
+    if(element && element.di){
       element.di['background-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-white');
       element.di['border-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-grey-225-10-35');
     }
