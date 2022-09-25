@@ -41,6 +41,22 @@
 
     --log-button-background-color: var(--dracula-current-line);
     --log-color: var(--dracula-foreground);
+
+    --token-simulation-silver-darken-94: var(--dracula-current-line);
+    --token-simulation-grey-darken-30: var(--dracula-foreground);
+}
+
+.bts-animation-speed-buttons path{
+  fill: var(--dracula-foreground);
+}
+
+.bts-animation-speed-buttons button{
+  background-color: var(--dracula-current-line);
+  color: var(--dracula-foreground);
+}
+
+.bts-notifications .bts-notification{
+  color: var(--dracula-foreground) !important;
 }
 
 .bio-properties-panel-group-header,
@@ -314,3 +330,4 @@ select{
       stroke-dashoffset: 0;
     }
   }
+ 
