@@ -4,6 +4,12 @@
 
 This plugin enables [Dracula](https://draculatheme.com/) inspired theme to [Camunda Modeler](https://github.com/camunda/camunda-modeler).
 
+
+
+https://user-images.githubusercontent.com/11790275/192173181-0defbd54-1f48-4eec-8887-9928421e5f90.mp4
+
+
+
 ![Screenshot](docs/screenshot4.png)
 
 ![Screenshot](docs/screenshot.png)
