@@ -105,7 +105,11 @@ function DraculaTheme(eventBus) {
 
     if(element && element.di){
       element.di['background-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-white');
-      element.di['border-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-grey-225-10-35');
+      element.di['border-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-grey-225-10-35');      
+
+      if(element.type == 'label'){
+        element.di.label.set('color', element.di['border-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-grey-225-10-35'));
+      }
     }
   }
 

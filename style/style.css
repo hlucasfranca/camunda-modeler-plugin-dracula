@@ -330,4 +330,13 @@ select{
       stroke-dashoffset: 0;
     }
   }
- 
+
+  .tabs .primary{
+    background-color: var(--dracula-background) !important;
+    color: var(--dracula-foreground) !important;
+  }
+
+  .tabs .active {
+    background-color: var(--dracula-current-line) !important;
+    color: var(--dracula-foreground) !important;
+  }
