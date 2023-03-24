@@ -28,10 +28,12 @@ https://user-images.githubusercontent.com/11790275/192173181-0defbd54-1f48-4eec-
 
 Open a Terminal window and run the following commands:
 
-1. `cd ~/Library/Application Support/camunda-modeler`
-2. `mkdir -p resources/plugins`
-3. `cd resources/plugins`
-4. `git clone https://github.com/camunda/camunda-modeler-token-simulation-plugin`
+```sh
+cd ~/Library/Application Support/camunda-modeler
+mkdir -p resources/plugins
+cd resources/plugins
+git clone https://github.com/hlucasfranca/camunda-modeler-plugin-dracula.git
+```
 
 Restart Camunda Modeler.
 
