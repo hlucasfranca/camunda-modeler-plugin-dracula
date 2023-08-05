@@ -745,18 +745,20 @@
   .djs-search-container:not(.open) {
     display: none;
   }
-  
+
+  .djs-popup-search input,  
   .djs-search-input input {
     font-size: 1.05em;
     width: 100%;
     padding: 6px 10px;
-    border: 1px solid var(--search-input-border-color);
+    border: 1px solid var(--search-input-border-color) !important;
     box-sizing: border-box;
   }
   
+  .djs-popup-search input:focus,
   .djs-search-input input:focus {
     outline: none;
-    border-color: var(--search-input-border-color);
+    border-color: var(--search-input-border-color) !important;
   }
   
   .djs-search-results {
