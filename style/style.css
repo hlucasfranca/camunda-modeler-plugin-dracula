@@ -325,6 +325,11 @@ select{
     stroke: var(--element-selected-outline-stroke-color);
   }
 
+  
+  .layer-selectionOutline .djs-selection-outline {    
+    stroke: none;
+  }
+
   @keyframes dash {
     to {
       stroke-dashoffset: 0;

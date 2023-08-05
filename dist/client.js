@@ -96,19 +96,26 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DraculaTheme; });
-function DraculaTheme(eventBus) {
+function DraculaTheme(eventBus, elementRegistry) {
 
   function changeColors(event) {
 
-    const gfx = event.gfx;
+    // const gfx = event.gfx;
     const element = event.element;
+    const documentElement = document.documentElement;
 
     if(element && element.di){
-      element.di['background-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-white');
-      element.di['border-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-grey-225-10-35');      
+      const elementDi = element.di;
+
+      elementDi['background-color']=getComputedStyle(documentElement).getPropertyValue('--color-white');
+      elementDi['border-color']=getComputedStyle(documentElement).getPropertyValue('--color-grey-225-10-35');      
 
       if(element.type == 'label'){
-        element.di.label.set('color', element.di['border-color']=getComputedStyle(document.documentElement).getPropertyValue('--color-grey-225-10-35'));
+
+        if(elementDi.label){
+          elementDi.label.set('color', element.di['border-color']=getComputedStyle(documentElement).getPropertyValue('--color-grey-225-10-35'));
+        }
+
       }
     }
   }
@@ -134,10 +141,14 @@ eventBus.on([
   'saveXML.start'  
 ], 1250, restoreColors);
 
+eventBus.on('diagram.init', function() {  
+});
+
 }
 
 DraculaTheme.$inject = [
-  'eventBus'
+  'eventBus',
+  'elementRegistry'
 ];
 
 /***/ }),
