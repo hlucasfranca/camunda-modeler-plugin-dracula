@@ -13,7 +13,13 @@
  * @param {BaseRenderer} bpmnRenderer
   */
 
+import {oneDarkTheme} from '@codemirror/theme-one-dark'
+
+import { EditorView, highlightActiveLine } from '@codemirror/view';
+
 export default function DraculaTheme(eventBus, elementRegistry,  commandStack, bpmnRenderer) {
+
+  let editorView = undefined;
 
   
 
@@ -47,6 +53,16 @@ export default function DraculaTheme(eventBus, elementRegistry,  commandStack, b
     }    
   }
 
+  function teste(event) {
+
+    let cmEditorElement = document.querySelector(".cm-editor") // Or whatever query you need
+
+  if(cmEditorElement){
+    editorView = cmEditorElement.querySelector(".cm-content").cmView.view
+  }
+    debugger;
+  }
+
 eventBus.on([
   'shape.added',
   'render.shape', 
@@ -56,12 +72,21 @@ eventBus.on([
   'element.changed'  
 ], 1250, changeColors);
 
+eventBus.on(['propertiesPanel.attach', 'propertiesPanel.detach'], 1250, teste)
+
 eventBus.on([
   'saveXML.start'  
 ], 1250, restoreColors);
 
 eventBus.on('diagram.init', function() {  
   let a = bpmnRenderer;
+
+  let b = oneDarkTheme;
+
+  
+
+  
+  debugger;
 });
 
 }
