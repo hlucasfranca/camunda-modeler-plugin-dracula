@@ -1,4 +1,21 @@
-export default function DraculaTheme(eventBus, elementRegistry) {
+/**
+ * @typedef {import('diagram-js/lib/core/ElementRegistry').default} ElementRegistry
+ * @typedef {import('diagram-js/lib/core/EventBus').default} EventBus
+ * @typedef {import('diagram-js/lib/draw/BaseRenderer').default} BaseRenderer
+ 
+ */
+
+/**
+ * Correct hover targets in certain situations to improve diagram interaction.
+ *
+ * @param {ElementRegistry} elementRegistry
+ * @param {EventBus} eventBus
+ * @param {BaseRenderer} bpmnRenderer
+  */
+
+export default function DraculaTheme(eventBus, elementRegistry,  commandStack, bpmnRenderer) {
+
+  
 
   function changeColors(event) {
 
@@ -44,11 +61,14 @@ eventBus.on([
 ], 1250, restoreColors);
 
 eventBus.on('diagram.init', function() {  
+  let a = bpmnRenderer;
 });
 
 }
 
 DraculaTheme.$inject = [
   'eventBus',
-  'elementRegistry'
+  'elementRegistry',
+  'commandStack',
+  'bpmnRenderer'  
 ];
