@@ -1,0 +1,150 @@
+.modal {
+  --input-width: calc(100% - 40px);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+
+  &:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--color-grey-225-10-15);
+    opacity: .2;
+    z-index: 1001;
+  }
+}
+
+.modal-dialog {
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  width: 638px;
+
+  margin: 10vh auto 6vh;
+  padding: 0;
+  z-index: 1001;
+
+  /* ensures round corners are properly cut */
+  overflow: hidden;
+  border: solid 1px var(--color-grey-225-10-75);
+  border-radius: 3px;
+  box-shadow: 0 1px 4px var(--color-black-opacity-30);
+
+  background-color: var(--color-white);
+  color: var(--color-grey-225-10-15);
+}
+
+.modal-content,
+.modal-content > form {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  max-height: 84vh;
+}
+
+.modal-header {
+  padding: 20px 60px 20px 20px;
+
+  background-color: var(--color-grey-225-10-95);
+  font-size: 16px;
+
+  border-bottom: solid 1px var(--color-grey-225-10-85);
+}
+
+.modal-title {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 16px 20px 20px 20px;
+
+  overflow-y: auto;
+
+  font-size: 14px;
+
+  background-color: var(--color-white);
+
+  legend {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: inherit;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--color-grey-225-10-15);
+    margin-bottom: 23px;
+  }
+
+  fieldset {
+    border-style: none;
+    margin: 20px auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  form {
+    font-size: 1.1em;
+  }
+
+  .fields {
+    display: grid;
+    grid-row-gap: 15px;
+  }
+
+  input[type=password].form-control,
+  input[type=text].form-control,
+  textarea.form-control,
+  select.form-control {
+    width: var(--input-width);
+  }
+
+  .file-list-item {
+    grid-template-columns: var(--input-width) auto;
+  }
+}
+
+.modal-footer {
+  padding: 15px 20px;
+
+  border-top: solid 1px var(--color-grey-225-10-85);
+
+  text-align: right;
+}
+
+.modal-dialog .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 22px;
+  height: 22px;
+  padding: 0;
+
+  border: none;
+  border-radius: 3px;
+  background-color: transparent;
+
+  &:hover {
+    background-color: var(--color-grey-225-10-90);
+  }
+
+  &:focus {
+    background-color: var(--color-grey-225-10-75);
+  }
+
+  svg {
+    fill: var(--color-grey-225-10-35);
+  }
+}

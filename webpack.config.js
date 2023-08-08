@@ -6,7 +6,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: ['./client/index.js', './style/client.less'],
+  entry: ['./client/index.js', './src/styles/style.less'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'client.js'
@@ -48,12 +48,13 @@ module.exports = {
   module: {
     rules: [
       {
-        include: path.resolve(__dirname, 'style'),
-        test: /\.(le|c)ss$/,
+        include: path.resolve(__dirname, 'src/styles'),
+        test: /\.less$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'less-loader',
+                    // compiles Less to CSS
+          "style-loader",
+          "css-loader",
+          "less-loader",
                 ],
       },
     ],

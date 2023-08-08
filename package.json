@@ -46,8 +46,13 @@
     "index.js"
   ],
   "dependencies": {
+    "@camunda/form-playground": "^0.8.0",
+    "@camunda/linting": "^3.4.1",
     "@codemirror/theme-one-dark": "^6.1.2",
+    "@ibm/plex": "^6.3.0",
     "bpmn-js": "^13.2.2",
-    "bpmn-moddle": "^8.0.1"
+    "bpmn-moddle": "^8.0.1",
+    "camunda-bpmn-js": "^3.1.0",
+    "camunda-dmn-js": "^1.1.0"
   }
 }
