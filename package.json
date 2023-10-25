@@ -22,12 +22,15 @@
   "license": "MIT",
   "devDependencies": {
     "@bpmn-io/diagram-js-ui": "^0.2.2",
+    "@camunda/form-playground": "^0.9.2",
     "@codemirror/commands": "^6.2.4",
     "@codemirror/lang-json": "^6.0.1",
     "@codemirror/lang-xml": "^6.0.2",
     "@codemirror/search": "^6.5.1",
     "@codemirror/state": "^6.2.1",
     "@codemirror/view": "^6.16.0",
+    "camunda-bpmn-js": "^3.6.1",
+    "camunda-dmn-js": "^1.4.0",
     "camunda-modeler-plugin-helpers": "^5.1.0",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
@@ -46,13 +49,10 @@
     "index.js"
   ],
   "dependencies": {
-    "@camunda/form-playground": "^0.8.0",
     "@camunda/linting": "^3.4.1",
     "@codemirror/theme-one-dark": "^6.1.2",
     "@ibm/plex": "^6.3.0",
     "bpmn-js": "^13.2.2",
-    "bpmn-moddle": "^8.0.1",
-    "camunda-bpmn-js": "^3.1.0",
-    "camunda-dmn-js": "^1.1.0"
+    "bpmn-moddle": "^8.0.1"
   }
 }
