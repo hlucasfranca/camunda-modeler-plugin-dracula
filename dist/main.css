@@ -10678,7 +10678,7 @@ h4.dms-heading {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/styles/style.less ***!
   \****************************************************************************************************************/
 :root {
-  --color-grey-225-10-15: hsl(225, 93%, 49%);
+  --color-grey-225-10-15: hsl(225, 10%, 15%);
   /* text */
   --color-grey-225-10-35: hsl(225, 10%, 35%);
   /* icons */
@@ -10718,103 +10718,11 @@ h4.dms-heading {
   /* backgrounds */
   --color-orange-20-98-52: hsl(20, 98%, 52%);
   /* new badges */
+  --color-white: hsl(0, 0%, 100%);
   --color-white-opacity-80: hsla(0, 0%, 100%, 0.8);
-  --color-black: hsl(0, 74%, 42%);
-  --color-black-opacity-10: hsla(118, 88%, 48%, 0.1);
-  --color-black-opacity-30: hsla(59, 85%, 51%, 0.33);
-}
-.fjs-container {
-  --color-grey-225-10-15: hsl(225, 93%, 49%);
-  /* text */
-  --color-grey-225-10-35: hsl(225, 10%, 35%);
-  /* icons */
-  --color-grey-225-10-55: hsl(225, 10%, 55%);
-  --color-grey-225-10-75: hsl(225, 10%, 75%);
-  /* lines */
-  --color-grey-225-10-80: hsl(225, 10%, 80%);
-  /* hover on grey bg */
-  --color-grey-225-10-85: hsl(225, 10%, 85%);
-  /* app window */
-  --color-grey-225-10-90: hsl(225, 10%, 90%);
-  /* button hover */
-  --color-grey-225-10-95: hsl(225, 10%, 95%);
-  /* backgrounds, hover */
-  --color-grey-225-10-97: hsl(225, 10%, 97%);
-  /* form element backgrounds */
-  --color-blue-205-100-40: hsl(205, 100%, 40%);
-  /* outline */
-  --color-blue-205-100-45: hsl(205, 100%, 45%);
-  /* primary hover */
-  --color-blue-205-100-50: hsl(205, 100%, 50%);
-  /* primary */
-  --color-blue-205-100-95: hsl(205, 100%, 95%);
-  --color-green-150-86-44: hsl(150, 86%, 44%);
-  /* success */
-  --color-red-360-100-40: hsl(0, 100%, 40%);
-  /* error hover */
-  --color-red-360-100-45: hsl(0, 100%, 45%);
-  /* error */
-  --color-red-360-100-92: hsl(0, 100%, 92%);
-  /* hover */
-  --color-red-360-100-97: hsl(0, 100%, 97%);
-  /* backgrounds */
-  --color-yellow-47-88-53: hsl(47, 88%, 53%);
-  /* warning */
-  --color-yellow-47-86-91: hsl(47, 86%, 91%);
-  /* backgrounds */
-  --color-orange-20-98-52: hsl(20, 98%, 52%);
-  /* new badges */
-  --color-white-opacity-80: hsla(0, 0%, 100%, 0.8);
-  --color-black: hsl(0, 74%, 42%);
-  --color-black-opacity-10: hsla(118, 88%, 48%, 0.1);
-  --color-black-opacity-30: hsla(59, 85%, 51%, 0.33);
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url(6629b08b13181f8a4bfa.woff2) format("woff2"), url(ba2f8d0321e96cb1f4c4.woff) format("woff");
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url(caf4bbc77ab142f19802.woff2) format("woff2"), url(ef6a33f2b85b9c104bde.woff) format("woff");
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local("IBM Plex Sans Medm"), local("IBMPlexSans-Medm"), url(4021a32acd286e97af25.woff2) format("woff2"), url(932b8f12dbcd0de4dba2.woff) format("woff");
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local("IBM Plex Sans SmBld"), local("IBMPlexSans-SmBld"), url(2f2a2952e943b7805747.woff2) format("woff2"), url(2d5b06a256df0118d32c.woff) format("woff");
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url(bfaf41f10c747eaad50f.woff2) format("woff2"), url(abbf272a9e54ea643068.woff) format("woff");
-}
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("IBM Plex Mono"), local("IBMPlexMono"), url(235eee7acf05753afa55.woff2) format("woff2"), url(84e97cb0cb5043333192.woff) format("woff");
-}
-:root {
-  --font-family: 'IBM Plex Sans', system-ui, Arial, sans-serif;
-  --font-family-monospace: 'IBM Plex Mono', monospace;
-  --font-size-default: 14px;
+  --color-black: hsl(0, 0%, 0%);
+  --color-black-opacity-10: hsla(0, 0%, 0%, 0.1);
+  --color-black-opacity-30: hsla(0, 0%, 0%, 0.3);
 }
 * {
   box-sizing: border-box;
@@ -11449,34 +11357,36 @@ body {
 .djs-popup-backdrop {
   z-index: 1001;
 }
+:root,
 .fjs-container,
 .bio-properties-panel,
 .djs-parent,
+body,
 body .panel__header {
-  --color-grey-225-10-15: hsl(225, 93%, 49%) !important;
+  --color-grey-225-10-15: hsl(0, 0%, 100%);
   /* text */
-  --color-grey-225-10-35: hsl(223, 60%, 51%);
+  --color-grey-225-10-35: hsl(0, 0%, 90%);
   /* icons */
-  --color-grey-225-10-55: hsl(97, 77%, 57%);
-  --color-grey-225-10-75: hsl(14, 90%, 49%);
+  --color-grey-225-10-55: hsl(0, 0%, 80%);
+  --color-grey-225-10-75: hsl(0, 0%, 70%);
   /* lines */
-  --color-grey-225-10-80: hsl(225, 10%, 80%);
+  --color-grey-225-10-80: hsl(0, 0%, 60%);
   /* hover on grey bg */
-  --color-grey-225-10-85: hsl(225, 10%, 85%);
+  --color-grey-225-10-85: hsl(0, 0%, 50%);
   /* app window */
-  --color-grey-225-10-90: hsl(225, 10%, 90%);
+  --color-grey-225-10-90: hsl(0, 0%, 40%);
   /* button hover */
-  --color-grey-225-10-95: hsl(225, 10%, 95%);
+  --color-grey-225-10-95: hsl(231, 15%, 18%);
   /* backgrounds, hover */
-  --color-grey-225-10-97: hsl(225, 10%, 97%);
+  --color-grey-225-10-97: hsl(231, 15%, 18%);
   /* form element backgrounds */
-  --color-blue-205-100-40: hsl(205, 100%, 40%);
+  --color-blue-205-100-40: hsl(0, 0%, 100%);
   /* outline */
-  --color-blue-205-100-45: hsl(205, 100%, 45%);
+  --color-blue-205-100-45: hsl(0, 0%, 100%);
   /* primary hover */
-  --color-blue-205-100-50: hsl(205, 100%, 50%);
+  --color-blue-205-100-50: hsl(0, 0%, 100%);
   /* primary */
-  --color-blue-205-100-95: hsl(205, 100%, 95%);
+  --color-blue-205-100-95: hsl(0, 0%, 100%);
   --color-green-150-86-44: hsl(150, 86%, 44%);
   /* success */
   --color-red-360-100-40: hsl(0, 100%, 40%);
@@ -11493,11 +11403,426 @@ body .panel__header {
   /* backgrounds */
   --color-orange-20-98-52: hsl(20, 98%, 52%);
   /* new badges */
-  --color-white: hsl(0, 0%, 63%) !important;
-  --color-white-opacity-80: hsla(0, 0%, 100%, 0.8);
-  --color-black: hsl(0, 74%, 42%) !important;
-  --color-black-opacity-10: hsla(118, 88%, 48%, 0.1);
-  --color-black-opacity-30: hsla(59, 85%, 51%, 0.33);
+  --color-white: hsl(231, 15%, 18%);
+  --color-white-opacity-80: hsla(231, 15%, 18%, 0.8);
+  --color-black: hsl(0, 0%, 100%);
+  --color-black-opacity-10: hsla(0, 0%, 100%, 0.1);
+  --color-black-opacity-30: hsla(0, 0%, 100%, 0.3);
+  --panel-text-color: hsl(0, 0%, 100%);
+}
+.djs-minimap,
+.cfp-editor-container,
+body {
+  background-color: hsl(231, 15%, 18%) !important;
+  border: solid 1px hsl(0, 0%, 100%) !important;
+}
+.panel__actions > button,
+.fjs-palette-field svg {
+  filter: invert();
+}
+.fjs-palette-field {
+  background-color: hsl(231, 15%, 28%);
+}
+.fjs-palette-field-text {
+  color: hsl(0, 0%, 100%);
+}
+.cfp-root .cfp-palette,
+.fjs-palette-container {
+  background-color: hsl(231, 15%, 18%);
+}
+.form-group {
+  --input-background-color: hsl(231, 15%, 18%);
+  --toggle-switch-on-background-color: hsl(0, 0%, 100%);
+  --toggle-switch-off-background-color: hsl(231, 15%, 48%);
+  --toggle-switch-disabled-background-color: var(--color-grey-225-10-85);
+  --toggle-switch-switcher-background-color: var(--color-white);
+}
+.fjs-editor-container {
+  --color-children-selected-border: var(--cds-border-interactive, var(--color-blue-219-100-53));
+  --color-children-selected-background: transparent;
+  --color-children-hover-border: var(--cds-border-interactive, var(--color-blue-219-100-53-05));
+  --color-context-pad-item-background: transparent;
+  --color-context-pad-item-fill: var(--cds-icon-secondary, var(--color-grey-225-10-15));
+  --color-context-pad-item-hover-fill: var(--color-red-360-100-45);
+  --color-resize-handle-background: var(--cds-border-interactive, var(--color-blue-219-100-53));
+  --color-resize-handle-border: var(--cds-border-interactive, var(--color-blue-219-100-53));
+  --color-dragula-background: var(--cds-highlight, var(--color-blue-205-100-95));
+  --color-dragula-border: var(--cds-border-interactive, var(--color-blue-205-100-45));
+  --color-dragula-mirror-background: var(--cds-background, var(--color-white));
+  --color-dragula-mirror-border: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-90)));
+  --color-dragula-error-background: var(--color-red-360-100-92);
+  --color-dragula-error-border: var(--cds-text-error, var(--color-red-360-100-45));
+}
+.fjs-palette-container {
+  --color-palette-text: var(--cds-text-primary, var(--color-grey-225-10-15));
+  --color-palette-container-background: var(--cds-background, var(--color-grey-225-10-95));
+  --color-palette-container-border: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-80)));
+  --color-palette-header: var(--cds-text-primary, var(--color-text));
+  --color-palette-header-background: var(--cds-background, var(--color-grey-225-10-95));
+  --color-palette-header-border: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-85)));
+  --color-palette-search: var(--color-palette-text);
+  --color-palette-search-icon: var(--cds-icon-secondary, var(--color-grey-225-10-35));
+  --color-palette-search-icon-hover: var(--cds-icon-primary, var(--color-grey-225-10-15));
+  --color-palette-search-background: var(--cds-field, var(--cds-field-01, var(--color-white)));
+  --color-palette-search-border: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-75)));
+  --color-palette-search-focus-background: var(--cds-field, var(--cds-field-01, var(--color-blue-205-100-95)));
+  --color-palette-search-focus-border: var(--cds-focus, var(--color-blue-205-100-50));
+  --color-palette-search-clear-focus-border: var(--cds-focus, var(--color-grey-225-10-50));
+  --color-palette-group-title: var(--color-palette-text);
+  --color-palette-field: var(--color-palette-text);
+  --color-palette-field-background: var(--cds-layer, var(--cds-layer-01, var(--color-white)));
+  --color-palette-field-border: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-80)));
+  --color-palette-field-hover-background: var(--cds-background-hover, var(--color-grey-225-10-90));
+  --cursor-palette-field: grab;
+  --palette-width: 250px;
+}
+.fjs-properties-container {
+  --color-properties-container-background: var(--cds-background, var(--color-white));
+  --color-properties-container-border: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-80)));
+  --properties-panel-width: 300px;
+}
+/**
+ * Theming overrides
+ */
+.fjs-properties-container .bio-properties-panel {
+  --text-base-color: hsl(0, 0%, 100%);
+  --text-error-color: hsl(0, 0%, 100%);
+  --link-color: hsl(0, 0%, 100%);
+  --description-color: var(--cds-text-secondary, var(--color-grey-225-10-35));
+  --description-code-background-color: var(--cds-layer, var(--cds-layer-01, var(--color-grey-225-10-97)));
+  --description-code-border-color: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-85)));
+  --description-list-item-color: var(--cds-text-secondary, var(--color-grey-225-10-35));
+  --placeholder-color: var(--cds-text-placeholder, var(--color-grey-225-10-35));
+  --placeholder-background-color: var(--cds-layer, var(--cds-layer-01, var(--color-grey-225-10-95)));
+  --header-background-color: var(--cds-layer, var(--cds-layer-01, var(--color-grey-225-10-95)));
+  --header-icon-fill-color: var(--cds-icon-primary, var(--color-grey-225-10-15));
+  --header-bottom-border-color: var(--color-grey-225-10-75);
+  --group-background-color: var(--cds-background, var(--color-white));
+  --group-bottom-border-color: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-75)));
+  --sticky-group-background-color: var(--cds-layer, var(--cds-layer-01, var(--color-grey-225-10-95)));
+  --sticky-group-bottom-border-color: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-75)));
+  --add-entry-fill-color: var(--cds-icon-secondary, var(--color-grey-225-10-35));
+  --add-entry-hover-fill-color: var(--cds-icon-inverse, var(--color-white));
+  --add-entry-hover-background-color: var(--cds-interactive, var(--color-blue-205-100-50));
+  --add-entry-label-color: var(--cds-text-inverse, var(--color-white));
+  --remove-entry-fill-color: var(--color-red-360-100-45);
+  --remove-entry-hover-background-color: var(--color-red-360-100-92);
+  --arrow-fill-color: var(--cds-icon-secondary, var(--color-grey-225-10-35));
+  --arrow-hover-background-color: var(--cds-layer, var(--cds-layer-01, var(--color-grey-225-10-95)));
+  --dot-color: var(--cds-text-secondary, var(--color-grey-225-10-35));
+  --list-badge-color: var(--cds-text-inverse, var(--color-white));
+  --list-badge-background-color: var(--cds-background-inverse, var(--color-grey-225-10-35));
+  --input-background-color: var(--cds-field, var(--cds-field-01, var(--color-grey-225-10-97)));
+  --input-border-color: var(--cds-border-strong, var(--cds-border-strong-01, var(--color-grey-225-10-75)));
+  --input-focus-background-color: var(--cds-field, var(--cds-field-01, var(--color-blue-205-100-95)));
+  --input-focus-border-color: var(--cds-focus, var(--color-blue-205-100-50));
+  --input-error-background-color: var(--cds-field, var(--cds-field-01, var(--color-red-360-100-97)));
+  --input-error-border-color: var(--cds-text-error, var(--color-red-360-100-45));
+  --input-error-focus-border-color: var(--cds-text-error, var(--color-red-360-100-45));
+  --input-disabled-color: var(--cds-text-disabled, var(--color-grey-225-10-55));
+  --input-disabled-background-color: var(--cds-field, var(--cds-field-01, var(--color-grey-225-10-97)));
+  --input-disabled-border-color: var(--cds-border-disabled, var(--color-grey-225-10-90));
+  --toggle-switch-on-background-color: var(--cds-interactive, var(--color-blue-205-100-50));
+  --toggle-switch-off-background-color: var(--cds-toggle-off, var(--color-grey-225-10-75));
+  --toggle-switch-switcher-background-color: var(--cds-background, var(--color-white));
+  --side-line-background-color: var(--cds-text-secondary, var(--color-grey-225-10-35));
+  --side-line-extension-background-color: var(
+    --cds-text-secondary,
+    (--color-grey-225-10-35)
+  );
+  --list-entry-dot-background-color: var(--cds-background-inverse, var(--color-grey-225-10-35));
+  --list-entry-header-button-fill-color: var(--cds-background-inverse, var(--color-grey-225-10-35));
+  --list-entry-add-entry-empty-background-color: var(--cds-interactive, var(--color-blue-205-100-50));
+  --list-entry-add-entry-empty-hover-background-color: var(--cds-interactive, var(--color-blue-205-100-45));
+  --list-entry-add-entry-label-color: var(--cds-text-inverse, var(--color-white));
+  --list-entry-add-entry-background-color: var(--cds-interactive, var(--color-blue-205-100-50));
+  --list-entry-add-entry-fill-color: var(--cds-icon-inverse, var(--color-white));
+  --feel-background-color: transparent;
+  --feel-active-color: var(--cds-interactive, var(--color-blue-205-100-45));
+  --feel-inactive-color: var(--cds-icon-secondary, var(--color-grey-225-10-35));
+  --feel-hover-color: var(--cds-icon-primary, var(--color-grey-225-10-15));
+  --feel-hover-background-color: var(--cds-layer-02, var(--color-grey-225-10-97));
+  --feel-active-background-color: transparent;
+  --feel-required-color: var(--cds-icon-disabled, var(--color-grey-225-10-55));
+  --feel-indicator-background-color: var(--cds-background-hover, var(--color-grey-225-10-90));
+}
+.fjs-properties-container .bio-properties-panel-input {
+  color: var(--color-text);
+}
+:root {
+  --dracula-background: #262936;
+  --dracula-current-line: #44475a;
+  --dracula-foreground: #f8f8f2;
+  --dracula-comment: #6071a4;
+  --dracula-cyan: #8be8fd;
+  --dracula-green: #52fa7c;
+  --dracula-orange: #ffb86b;
+  --dracula-pink: #ff7ac6;
+  --dracula-purple: #bf95f9;
+  --dracula-red: #ff5757;
+  --dracula-yellow: #f1fa89;
+  --color-white: var(--dracula-background);
+  --color-black: var(--dracula-foreground);
+  --color-transparent: transparent;
+  --color-grey-225-10-15: #f8f8f2;
+  --color-grey-225-10-35: #cdcfcf;
+  --color-grey-225-10-55: #afacaf;
+  --color-grey-225-10-75: #928f95;
+  --color-grey-225-10-80: #78757d;
+  --color-grey-225-10-85: #605e53;
+  --color-grey-225-10-90: #4c4a55;
+  --color-grey-225-10-95: #383945;
+  --color-grey-225-10-97: #282a36;
+  --overlay-border-color: var(--color-grey-225-10-85);
+  --overlay-background-color: var(--color-white);
+  --overlay-font-color: var(--color-grey-225-10-15);
+  --overlay-title-color: var(--color-grey-225-10-15);
+  --overlay-link-color: var(--color-blue-205-100-50);
+  --overlay-max-height: auto;
+  --overlay-max-width: auto;
+  --overlay-min-height: auto;
+  --overlay-min-width: auto;
+  --log-button-background-color: var(--dracula-current-line);
+  --log-color: var(--dracula-foreground);
+  --token-simulation-silver-darken-94: var(--dracula-current-line);
+  --token-simulation-grey-darken-30: var(--dracula-foreground);
+}
+.bts-animation-speed-buttons path {
+  fill: var(--dracula-foreground);
+}
+.bts-animation-speed-buttons button {
+  background-color: var(--dracula-current-line);
+  color: var(--dracula-foreground);
+}
+.bts-notifications .bts-notification {
+  color: var(--dracula-foreground) !important;
+}
+.bio-properties-panel-group-header,
+.form-group label {
+  color: var(--dracula-pink);
+}
+body,
+.djs-direct-editing-content,
+.djs-direct-editing-parent {
+  background-color: var(--dracula-background) !important;
+  color: var(--dracula-foreground) !important;
+}
+input,
+textarea,
+select {
+  color: var(--dracula-foreground) !important;
+  background-color: var(--dracula-current-line);
+}
+.bio-properties-panel-input:focus,
+.bio-properties-panel-input:focus-within {
+  background-color: var(--dracula-current-line);
+  color: var(--dracula-foreground);
+}
+.welcome-card {
+  background-color: var(--dracula-current-line) !important;
+  color: var(--dracula-foreground) !important;
+}
+.bio-properties-panel {
+  --color-grey-225-10-15: #f8f8f2;
+  --color-grey-225-10-35: #cfcdcd;
+  --color-grey-225-10-55: #afacaf;
+  --color-grey-225-10-75: #928f95;
+  --color-grey-225-10-80: #78757d;
+  --color-grey-225-10-85: #605e53;
+  --color-grey-225-10-90: #4c4a55;
+  --color-grey-225-10-95: #383945;
+  --color-grey-225-10-97: #282a36;
+  --color-blue-205-100-35: hsl(205, 100%, 35%);
+  --color-blue-205-100-45: hsl(205, 100%, 45%);
+  --color-blue-205-100-50: hsl(205, 100%, 50%);
+  --color-blue-205-100-95: hsl(205, 100%, 95%);
+  --color-green-150-86-44: hsl(150, 86%, 44%);
+  --color-red-360-100-40: hsl(0, 100%, 40%);
+  --color-red-360-100-45: hsl(0, 100%, 45%);
+  --color-red-360-100-92: hsl(0, 100%, 92%);
+  --color-red-360-100-97: hsl(0, 100%, 97%);
+  --color-white: var(--dracula-background);
+  --color-black: var(--dracula-foreground);
+  --color-transparent: transparent;
+  --text-base-color: var(--dracula-foreground) !important;
+  --text-error-color: var(--dracula-red);
+  --link-color: var(--dracula-cyan);
+  --description-color: hsla(var(--dracula-foreground), 0.1);
+  --description-code-background-color: var(--color-grey-225-10-97);
+  --description-code-border-color: var(--color-grey-225-10-85);
+  --description-list-item-color: var(--color-grey-225-10-35);
+  --placeholder-color: var(--color-grey-225-10-35);
+  --placeholder-background-color: var(--color-grey-225-10-95);
+  --header-background-color: var(--color-grey-225-10-95);
+  --header-icon-fill-color: var(--color-grey-225-10-15);
+  --header-bottom-border-color: var(--color-grey-225-10-75);
+  --group-background-color: var(--color-white);
+  --group-bottom-border-color: var(--color-grey-225-10-75);
+  --sticky-group-background-color: var(--color-grey-225-10-95);
+  --sticky-group-bottom-border-color: var(--color-grey-225-10-75);
+  --add-entry-fill-color: var(--color-grey-225-10-35);
+  --add-entry-hover-fill-color: var(--color-white);
+  --add-entry-hover-background-color: var(--color-blue-205-100-50);
+  --add-entry-label-color: var(--color-white);
+  --remove-entry-fill-color: var(--color-red-360-100-45);
+  --remove-entry-hover-background-color: var(--color-red-360-100-92);
+  --arrow-fill-color: var(--color-grey-225-10-35);
+  --arrow-hover-background-color: var(--color-grey-225-10-95);
+  --dot-color: var(--color-grey-225-10-35);
+  --list-badge-color: var(--color-white);
+  --list-badge-background-color: var(--color-grey-225-10-35);
+  --input-background-color: var(--dracula-current-line);
+  --input-border-color: var(--color-grey-225-10-75);
+  --input-focus-background-color: var(--color-blue-205-100-95);
+  --input-focus-border-color: var(--color-blue-205-100-50);
+  --input-error-background-color: var(--color-red-360-100-97);
+  --input-error-border-color: var(--color-red-360-100-45);
+  --input-error-focus-border-color: var(--color-red-360-100-45);
+  --input-disabled-color: var(--color-grey-225-10-55);
+  --input-disabled-background-color: var(--color-grey-225-10-97);
+  --input-disabled-border-color: var(--color-grey-225-10-90);
+  --toggle-switch-on-background-color: var(--color-blue-205-100-50);
+  --toggle-switch-off-background-color: var(--color-grey-225-10-75);
+  --toggle-switch-switcher-background-color: var(--color-white);
+  --side-line-background-color: var(--color-grey-225-10-35);
+  --side-line-extension-background-color: var(--color-grey-225-10-35);
+  --list-entry-dot-background-color: var(--color-grey-225-10-35);
+  --list-entry-header-button-fill-color: var(--color-grey-225-10-35);
+  --list-entry-add-entry-empty-background-color: var(--color-blue-205-100-50);
+  --list-entry-add-entry-empty-hover-background-color: var(--color-blue-205-100-45);
+  --list-entry-add-entry-label-color: var(--color-white);
+  --list-entry-add-entry-background-color: var(--color-blue-205-100-50);
+  --list-entry-add-entry-fill-color: var(--color-white);
+  --dropdown-item-background-color: var(--color-white);
+  --dropdown-item-hover-background-color: var(--color-grey-225-10-95);
+  --dropdown-separator-background-color: var(--color-grey-225-10-75);
+  --feel-active-color: var(--color-blue-205-100-35);
+  --feel-inactive-color: var(--color-grey-225-10-35);
+  --feel-indicator-background-color: var(--color-grey-225-10-90);
+}
+.align-elements img,
+.djs-context-pad img {
+  filter: invert(1) !important;
+}
+.djs-container {
+  --color-black-opacity-10: rgba(248, 248, 242, 0.1);
+  --color-grey-225-10-15: #f8f8f2;
+  --color-grey-225-10-35: #cfcdcd;
+  --color-grey-225-10-55: #afacaf;
+  --color-grey-225-10-75: #928f95;
+  --color-grey-225-10-80: #78757d;
+  --color-grey-225-10-85: #605e53;
+  --color-grey-225-10-90: #4c4a55;
+  --color-grey-225-10-95: #383945;
+  --color-grey-225-10-97: #282a36;
+  --color-blue-205-100-35: hsl(205, 100%, 35%);
+  --color-blue-205-100-45: hsl(205, 100%, 45%);
+  --color-blue-205-100-50: hsl(205, 100%, 50%);
+  --color-blue-205-100-95: hsl(205, 100%, 95%);
+  --color-green-150-86-44: hsl(150, 86%, 44%);
+  --color-red-360-100-40: hsl(0, 100%, 40%);
+  --color-red-360-100-45: hsl(0, 100%, 45%);
+  --color-red-360-100-92: hsl(0, 100%, 92%);
+  --color-red-360-100-97: hsl(0, 100%, 97%);
+  --color-white: var(--dracula-background);
+  --color-black: var(--dracula-foreground);
+  --color-transparent: transparent;
+  --popup-border-color: var(--dracula-comment);
+  --context-pad-entry-background-color: var(--color-white);
+  --context-pad-entry-hover-background-color: var(--color-grey-225-10-95);
+  --element-hover-outline-fill-color: var(--color-blue-205-100-45);
+  --element-selected-outline-stroke-color: var(--dracula-purple);
+  --element-selected-outline-secondary-stroke-color: var(--element-selected-outline-stroke-color);
+  --element-dragger-color: var(--element-selected-outline-stroke-color);
+  --palette-entry-hover-color: var(--dracula-purple);
+  --popup-header-entry-selected-background-color: var(--dracula-current-line);
+  --palette-entry-selected-color: var(--dracula-purple);
+  --lasso-fill-color: rgba(189, 147, 249, 0.2);
+}
+.modal-dialog,
+.btn-primary,
+.controls button {
+  color: hsl(0, 0%, 100%);
+}
+.bts-toggle-mode {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: hsl(231, 15%, 18%);
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 2px !important;
+  padding: 6px;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  user-select: none;
+  display: inline-flex;
+}
+.djs-container .djs-minimap {
+  background-color: rgba(40, 42, 54, 0.9);
+}
+.bio-properties-panel-description,
+.bio-properties-panel-description p,
+.bio-properties-panel-description span,
+.bio-properties-panel-description div {
+  color: var(--dracula-purple);
+}
+.djs-popup .entry:hover {
+  color: var(--dracula-purple);
+}
+.djs-context-pad {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  line-height: 1;
+  background-color: var(--dracula-background);
+  border: 1px solid var(--dracula-comment);
+  padding: 5px;
+  width: 42px !important;
+}
+.djs-context-pad .group:not(:last-child) {
+  border-bottom: 1px solid var(--dracula-comment);
+}
+.djs-context-pad .entry {
+  border-radius: 0px !important;
+  padding: 0px;
+  background-color: var(--context-pad-entry-background-color);
+  box-shadow: 0 0 0px 0px var(--context-pad-entry-background-color) !important;
+  pointer-events: all;
+  vertical-align: middle;
+  width: 30px;
+  height: 22px;
+  margin: 5px 0 5px 0;
+}
+.djs-context-pad .entry:hover {
+  background: var(--dracula-background);
+  color: var(--dracula-purple);
+}
+.djs-context-pad.open {
+  display: block;
+}
+.djs-element.selected .djs-outline,
+.djs-selection-outline {
+  stroke-dasharray: 2;
+  stroke-dashoffset: 500;
+  animation: dash 80s linear infinite;
+  stroke: var(--element-selected-outline-stroke-color);
+}
+.layer-selectionOutline .djs-selection-outline {
+  stroke: none;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.tabs .primary {
+  background-color: var(--dracula-background) !important;
+  color: var(--dracula-foreground) !important;
+}
+.tabs .active {
+  background-color: var(--dracula-current-line) !important;
+  color: var(--dracula-foreground) !important;
 }
 
 

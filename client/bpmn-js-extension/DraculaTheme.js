@@ -16,7 +16,7 @@
 
 import { oneDarkTheme } from "@codemirror/theme-one-dark";
 
-import {getFillColor} from "bpmn-js/lib/draw/BpmnRenderUtil"
+import { getFillColor } from "bpmn-js/lib/draw/BpmnRenderUtil";
 
 export default function DraculaTheme(
   eventBus,
@@ -32,19 +32,30 @@ export default function DraculaTheme(
     const element = event.element;
     const documentElement = document.documentElement;
 
-    // if (element && element.di) {
-    //   const elementDi = element.di;
+    if (element && element.di) {
+      const elementDi = element.di;
 
-    //   elementDi["background-color"] =
-    //     getComputedStyle(documentElement).getPropertyValue("--color-white");
-    //   elementDi["border-color"] = getComputedStyle(documentElement).getPropertyValue("--color-grey-225-10-35");
+      if (!elementDi["background-color"]) {
+        elementDi["background-color"] =
+          getComputedStyle(documentElement).getPropertyValue("--color-white");
+      }
+      if (!elementDi["border-color"]) {
+        elementDi["border-color"] = getComputedStyle(
+          documentElement
+        ).getPropertyValue("--color-grey-225-10-35");
+      }
 
-    //   if (element.type == "label") {
-    //     if (elementDi.label) {
-    //       elementDi.label.set("color", (element.di["border-color"] = getComputedStyle(documentElement).getPropertyValue("--color-grey-225-10-35")));
-    //     }
-    //   }
-    // }
+      if (element.type == "label") {
+        if (elementDi.label) {
+          elementDi.label.set(
+            "color",
+            (element.di["border-color"] = getComputedStyle(
+              documentElement
+            ).getPropertyValue("--color-grey-225-10-35"))
+          );
+        }
+      }
+    }
   }
 
   function restoreColors(event) {
@@ -55,18 +66,13 @@ export default function DraculaTheme(
   }
 
   function teste(event) {
-    debugger;
-
     let container = canvas.getContainer();
-
-    
 
     let cmEditorElement = document.querySelector(".cm-editor"); // Or whatever query you need
 
     if (cmEditorElement) {
       editorView = cmEditorElement.querySelector(".cm-content").cmView.view;
     }
-    
   }
 
   eventBus.on(
@@ -92,12 +98,6 @@ export default function DraculaTheme(
 
   eventBus.on("diagram.init", function () {
     const handlers = bpmnRenderer.handlers;
-    
-
-
-    
-
-    debugger;
   });
 }
 
@@ -106,5 +106,5 @@ DraculaTheme.$inject = [
   "elementRegistry",
   "commandStack",
   "bpmnRenderer",
-  'canvas'
+  "canvas",
 ];
