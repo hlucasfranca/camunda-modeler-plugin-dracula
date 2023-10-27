@@ -2,7 +2,7 @@
 
 module.exports = {
   name: 'Dracula Theme',
-  style: './dist/client.min.css',
+  style: './dist/main.css',
   script: './dist/client.js',
   menu: './menu/menu.js'  
 };
