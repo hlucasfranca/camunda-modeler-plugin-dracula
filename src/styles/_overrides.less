@@ -766,3 +766,28 @@ select {
   background-color: var(--dracula-current-line) !important;
   color: var(--dracula-foreground) !important;
 }
+
+
+
+.btn-secondary {
+  color: @dracula-background !important;
+  box-shadow: 0 2px 2px 0 @dracula-background !important;
+  border: solid 1px var(--color-grey-225-10-75);
+  background-color: yellow !important;
+
+  &:hover {
+    background-color: red !important;
+  }
+
+  &:active {
+    background-color: green !important;
+  }
+
+  &:disabled {
+    box-shadow: none;
+    border: solid 1px var(--color-grey-225-10-75);
+    background-color: var(--color-grey-225-10-95);
+    color: var(--color-grey-225-10-75);
+  }
+
+}

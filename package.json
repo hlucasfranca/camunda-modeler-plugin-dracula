@@ -28,7 +28,7 @@
     "@codemirror/lang-xml": "^6.0.2",
     "@codemirror/search": "^6.5.1",
     "@codemirror/state": "^6.2.1",
-    "@codemirror/view": "^6.16.0",
+    "@codemirror/view": "^6.21.4",
     "camunda-bpmn-js": "^3.6.1",
     "camunda-dmn-js": "^1.4.0",
     "camunda-modeler-plugin-helpers": "^5.1.0",
@@ -52,6 +52,7 @@
     "@camunda/linting": "^3.4.1",
     "@codemirror/theme-one-dark": "^6.1.2",
     "@ibm/plex": "^6.3.0",
+    "@uiw/codemirror-themes-all": "^4.21.20",
     "bpmn-js": "^13.2.2",
     "bpmn-moddle": "^8.0.1"
   }

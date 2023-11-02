@@ -3,9 +3,8 @@ import {
   registerDmnJSPlugin,
 } from "camunda-modeler-plugin-helpers";
 
-import DraculaTheme from "./bpmn-js-extension";
+import CustomBpmnRenderer from './custom-bpmn-renderer'
+import CustomDrdRenderer from './custom-drd-renderer'
 
-import CustomRenderer from './custom-renderer'
-
-registerBpmnJSPlugin(CustomRenderer);
-//registerDmnJSPlugin(DraculaTheme, ["drd", "literalExpression"]);
+registerBpmnJSPlugin(CustomBpmnRenderer);
+registerDmnJSPlugin(CustomDrdRenderer, ["drd", "literalExpression"]);
